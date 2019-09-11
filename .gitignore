@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!app/
+!app/*
+!README.md
+!docker-compose.yml
+!.gitignore

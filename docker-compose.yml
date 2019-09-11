@@ -1,0 +1,12 @@
+version: '2'
+services:
+  crate-support-dns-api:
+    image: containers.cisco.com/jamchapp/crate-support-dns-api:v1.0.3
+    environment:
+      ACTION_TO_TAKE: update
+      DNS_MGMT_ENDPOINT: http://dnsmgmt-service.dnsmgmt:9000
+      HOST_UUID: 73ec2cd311e64dfe908b0e4890a6f3a7.crate.cisco.com
+      RECORD: trash-panda-wedding.trash-panda-paradise.crate.farm
+    labels:
+      io.rancher.container.start_once: 'true'
+      io.rancher.container.pull_image: always
